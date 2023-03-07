@@ -1,0 +1,90 @@
+/*
+#
+
+*/
+@font-face {
+  font-family: 'Pixelogist';
+  src: url('../font/PixeloidSans.ttf') format('truetype');
+  }
+
+body {
+  margin: 0;
+  font-family: 'Pixelogist';
+  background-repeat: space;
+  height : 100vh;
+}
+
+.all{
+  display: inline-grid;
+  background: linear-gradient(to bottom, #f96c00, #fb9b01);
+  grid-template-columns: 15% 70% 15%;
+}
+.left_panel{
+  grid-column: 1;
+  grid-row: 1;
+  background: linear-gradient(to bottom, #f96c00, #fb9b01);
+}
+.content{
+  border-radius: 20% 20% 0% 0%;
+  background-color: #e8e8e8;
+  grid-column: 2;
+  grid-row: 1;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-right: 5%;
+}
+.right_panel{
+  grid-column: 3;
+  grid-row: 1;
+  background: linear-gradient(to bottom, #f96c00, #fb9b01);
+}
+
+.right_panel .left_panel{
+/* background-color: #fb9b01; */
+background: linear-gradient(to bottom, #f96c00, #fb9b01);
+width: 20%;
+}
+
+.all{
+height: 85%;
+width: 100%;
+}
+
+nav.menu {
+  height: 15%;
+  display: flex; /* Affiche les éléments du menu en ligne */
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  width: 100%;
+  background-color: #f96c00;
+  margin-top: 0;
+}
+
+nav.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.menu li {
+  display: inline-block;
+}
+
+nav.menu li a {
+  border-radius: 25% 10%;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #fff;
+  transition: 0.5s
+  /* font-weight: bold; */
+}
+
+nav.menu li a:hover {
+  /* font-family: 'Pixelogist', sans-serif; */
+  color: #fb9b01;
+  background-color: #e8e8e8;
+  transform: scale(0.9);
+  /* transform: scaleY(0.8); */
+}
