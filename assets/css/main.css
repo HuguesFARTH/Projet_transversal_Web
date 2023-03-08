@@ -10,14 +10,18 @@
 body {
   margin: 0;
   font-family: 'Pixelogist';
-  background-repeat: space;
-  height : 100vh;
+  height : 100%;
+  width: 100% ;
+  background-color: #f96c00;
+  overflow-x: hidden;
 }
 
 .all{
   display: inline-grid;
   background: linear-gradient(to bottom, #f96c00, #fb9b01);
-  grid-template-columns: 15% 70% 15%;
+  background-repeat: no-repeat;
+  grid-template-columns: 15vw 70vw 15vw;
+  height : 100%;
 }
 .left_panel{
   grid-column: 1;
@@ -25,6 +29,7 @@ body {
   background: linear-gradient(to bottom, #f96c00, #fb9b01);
 }
 .content{
+  z-index:2;
   border-radius: 20% 20% 0% 0%;
   background-color: #e8e8e8;
   grid-column: 2;
@@ -32,6 +37,8 @@ body {
   padding-left: 5%;
   padding-top: 5%;
   padding-right: 5%;
+  font-size: 1.5vw;
+  box-shadow: 0em 0em 0.5em 1em rgba(255, 255, 255, 0.185);
 }
 .right_panel{
   grid-column: 3;
@@ -46,45 +53,85 @@ width: 20%;
 }
 
 .all{
-height: 85%;
+margin-top: 1vh;
+/* height: 85%; */
 width: 100%;
+height: 100%;
 }
 
 nav.menu {
+  border-radius: 0% 0% 20% 20%;
+  background-color: #00000063;
+  width: 100%;
+  margin-bottom: 0%;
   height: 15%;
-  display: flex; /* Affiche les éléments du menu en ligne */
+  /* padding-left: 1vw;
+  padding-right: 1vw; */
+
+}
+
+nav.menu[autohide="true"]:hover {
+  margin-bottom: 0%;
+  height: 15%;
+  transform: translateY(0);
+  transition-delay: 0s;
+  transition-property: transform margin-bottom height;
+}
+
+nav.menu[autohide="true"] {
+  height: 3%;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transform: translateY(-80%);
+  margin-bottom: -5%;
+  transition-delay: 0s;
+  transition-property: transform margin-bottom height;
+}
+
+nav.menu button {
+  padding: 0;
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center; /* Centre les éléments verticalement */
-  width: 100%;
-  background-color: #f96c00;
-  margin-top: 0;
+  width: 10%;
 }
 
 nav.menu ul {
+  display: flex; /* Affiche les éléments du menu en ligne */
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-bottom: 2vw;
+  padding-top: 1vw;
 }
 
 nav.menu li {
-  display: inline-block;
+  flex-wrap: nowrap;
+  display: inline-table;
+  padding-left: 1vw;
 }
 
 nav.menu li a {
+  padding-left: 0.5vw;
   border-radius: 25% 10%;
   display: block;
-  padding: 10px;
+  /* padding-right: 1vw; */
   text-decoration: none;
-  font-size: 50px;
+  font-size: 5vw;
   color: #fff;
-  transition: 0.5s
+  transition-duration: 1s;
+  transition-property: color background-color transform margin box-shadow;
   /* font-weight: bold; */
 }
 
 nav.menu li a:hover {
   /* font-family: 'Pixelogist', sans-serif; */
-  color: #fb9b01;
+  color: #000000;
   background-color: #e8e8e8;
-  transform: scale(0.9);
+  transform: scale(1.1);
+  margin-left: 1vw;
+  margin-right: 1vw;
+  box-shadow: 0em 0em 0.3em 0.1em #e8e8e8;
   /* transform: scaleY(0.8); */
 }
