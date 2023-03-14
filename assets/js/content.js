@@ -12,6 +12,12 @@ function updateContent(contentDiv, href=null){
     case "#Camera":
       url = "camera.html"
       break;
+    case "#Mode":
+      url = "mode.html"
+      break;
+    case "#Controlleur":
+      url = "controlleur.html"
+      break;
     default:
       url = "acceuil.html"
   }
