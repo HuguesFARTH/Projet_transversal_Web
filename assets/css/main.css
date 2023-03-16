@@ -185,7 +185,7 @@ nav.camera button {
 }
 
 nav.camera ul {
-  display: grid ; /* Affiche les éléments du menu en ligne */
+  display: grid ; /* Affiche les éléments du menu en vertical*/
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center; /* Centre les éléments verticalement */
   list-style: none;
@@ -226,3 +226,15 @@ nav.camera li a:hover {
 }
 
 /* fin test  */
+
+/* test pour resize l'image du mode de fonctionnement dans l'onglet*/
+/* camera */
+
+img {
+
+  width : 150px;
+  height : 150px;
+
+}
+
+/* fin du test */
