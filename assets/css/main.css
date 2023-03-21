@@ -142,7 +142,7 @@ nav.menu li a:hover {
 
 nav.menu_left {
   border-radius: 0% 20% 20% 00%;
-  background-color: #00000063;
+  background-color: #FFFFFF63;
   width: 100%;
   height: 20%;
   margin-right: -5%;
@@ -168,6 +168,7 @@ nav.menu_left ul {
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center; /* Centre les éléments verticalement */
   list-style: none;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -184,7 +185,7 @@ nav.menu_left_icon{
 }
 
 .menu_left_icon img{
-  background-color: red;
+  /* background-color: red; */
   width: 200%;
   height: 200%;
 }
