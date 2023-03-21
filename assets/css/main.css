@@ -23,6 +23,7 @@ body {
   grid-template-columns: 15vw 70vw 15vw;
   height : 100%;
 }
+
 .left_panel{
   grid-column: 1;
   grid-row: 1;
@@ -71,9 +72,6 @@ nav.menu {
   width: 100%;
   margin-bottom: 0%;
   height: 15%;
-  /* padding-left: 1vw;
-   padding-right: 1vw; */
-
 }
 
 nav.menu[autohide="true"]:hover {
@@ -141,8 +139,75 @@ nav.menu li a:hover {
   /* transform: scaleY(0.8); */
 }
 
-<<<<<<< HEAD
-/* footer */
+
+nav.menu_left {
+  border-radius: 0% 20% 20% 00%;
+  background-color: #00000063;
+  width: 100%;
+  height: 20%;
+  margin-right: -5%;
+}
+
+nav.menu_left[autohide="true"]:hover {
+  width: 100%;
+  transform: translateX(0);
+  transition-delay: 0s;
+  transition-property: transform margin-bottom height;
+}
+
+nav.menu_left[autohide="true"] {
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transform: translateX(-80%);
+  transition-delay: 0s;
+  transition-property: transform margin-bottom height;
+}
+
+nav.menu_left ul {
+  display: flex ; /* Affiche les éléments du menu en ligne */
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.menu_left_icon{
+  vertical-align: top;
+  display: block;
+  /* align-items: flex-end; */
+  /* height: 100%; */
+  /* width: 100%; */
+  background-color: red;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.menu_left_icon img{
+  background-color: red;
+  width: 200%;
+  height: 200%;
+}
+
+#menu_left[mode="0"] #manette_left_mode{
+  visibility: hidden;
+}
+
+#menu_left[mode="1"] #clavier_left_mode{
+  visibility: hidden;
+}
+
+/* .vertical_separator{
+  height: 10vw;
+  width: 10%;
+  border-left: 6px solid green;
+} */
+
+/*
+nav.selection[mode="1"] #clavier{
+  visibility: hidden;
+} */
+
 
 .site-footer
 {
@@ -310,7 +375,7 @@ nav.menu li a:hover {
     font-weight:600
   }
 }
-=======
+
 
 /* Test sidebar camera */
 
@@ -361,7 +426,7 @@ nav.camera ul {
   padding: 0;
   padding-bottom: 2vw;
   padding-top: 1vw;
-  
+
 }
 nav.camera li {
   flex-wrap: nowrap;
