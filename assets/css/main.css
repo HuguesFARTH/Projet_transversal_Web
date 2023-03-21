@@ -72,7 +72,7 @@ nav.menu {
   margin-bottom: 0%;
   height: 15%;
   /* padding-left: 1vw;
-  padding-right: 1vw; */
+   padding-right: 1vw; */
 
 }
 
@@ -102,7 +102,7 @@ nav.menu button {
 }
 
 nav.menu ul {
-  display: flex; /* Affiche les éléments du menu en ligne */
+  display: flex ; /* Affiche les éléments du menu en ligne */
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center; /* Centre les éléments verticalement */
   list-style: none;
@@ -141,6 +141,7 @@ nav.menu li a:hover {
   /* transform: scaleY(0.8); */
 }
 
+<<<<<<< HEAD
 /* footer */
 
 .site-footer
@@ -309,3 +310,100 @@ nav.menu li a:hover {
     font-weight:600
   }
 }
+=======
+
+/* Test sidebar camera */
+
+nav.camera {
+  z-index: 1;
+  border-radius: 200% 200% 200% 200%;
+  /* background-color: #0a0a0a; */
+  width: 10%;
+  margin-bottom: 0%;
+  height: 1vh;
+  /* padding-left: 100px; */
+   /* padding-right: 1vw;  */
+
+
+}
+
+nav.camera[autohide="true"]:hover {
+  margin-bottom: 0%;
+  /* height: 15%; */
+  /* transform: translateX(0); */
+  transition-delay: 0s;
+  /* transition-property: transform margin-bottom height; */
+}
+
+nav.camera[autohide="true"] {
+  height: 3%;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  /* transform: translateX(-30%); */
+  /* margin-bottom: -5%; */
+  transition-delay: 0s;
+  transition-property: transform margin-bottom height;
+}
+
+nav.camera button {
+  padding: 0;
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  width: 10%;
+}
+
+nav.camera ul {
+  display: grid ; /* Affiche les éléments du menu en vertical*/
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2vw;
+  padding-top: 1vw;
+  
+}
+nav.camera li {
+  flex-wrap: nowrap;
+  display: inline-table;
+  padding-left: 1vw;
+}
+
+nav.camera li a {
+  padding-left: 0;
+  border-radius: 25% 10%;
+  display: block;
+  padding-right: 10vw;
+  text-decoration: none;
+  font-size: 5vw;
+  color: #fff;
+  transition-duration: 1s;
+  transition-property: color background-color transform margin box-shadow;
+  /* font-weight: bold; */
+}
+
+nav.camera li a:hover {
+  /* font-family: 'Pixelogist', sans-serif; */
+  color: #000000;
+  background-color: #e8e8e8;
+  transform: scale(1.1);
+  margin-left: 1vw;
+  margin-right: 1vw;
+  box-shadow: 0em 0em 0.3em 0.1em #e8e8e8;
+  /* transform: scaleY(0.8); */
+}
+
+/* fin test  */
+
+/* test pour resize l'image du mode de fonctionnement dans l'onglet*/
+/* camera */
+
+img {
+
+  width : 150px;
+  height : 150px;
+
+}
+
+/* fin du test */
+>>>>>>> 191d81ad620a5edf02c32552467ab059a1f063f1
