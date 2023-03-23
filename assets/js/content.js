@@ -31,9 +31,11 @@ function updateContent(contentDiv, href=null){
   xmlHttp.send();
 }
 
-contentDiv = document.getElementById("content")
+contentDiv = document.getElementById("content").children[0]
 updateContent(contentDiv)
-
+if(window.matchMedia("(any-hover: none)").matches) {
+  document.getElementById("menu").setAttribute("autohide","false")
+}
 for(a of document.getElementById("menu").getElementsByTagName("a")){
   a.addEventListener("click", function(event){
      updateContent(contentDiv,href=event.target.hash)
